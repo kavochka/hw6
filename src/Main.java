@@ -26,7 +26,9 @@ public class Main {
 
         System.out.println("Task 5");
         for (int i = 1904; i <= 2096; i += 4) {
-            System.out.println(i);
+            if (i % 4 == 0 && i % 100 != 0 || i % 400 == 0) {
+                System.out.printf("%s год является високосным%n", i);
+            }
         }
         System.out.println();
 
@@ -52,13 +54,21 @@ public class Main {
         System.out.println();
 
         System.out.println("Task 9");
-        double totalBank = 0;
-        int depositBank = 29000;
-        double percentPerMonth = 1.01;
-        for (int month = 1; month <= 12; month++) {
-            totalBank = (totalBank + depositBank) * percentPerMonth;
-            System.out.printf("Месяц %s, сумма накоплений равна %.2f рублей%n", month, totalBank);
+        // double totalBank = 0;
+        //int depositBank = 29000;
+        //for (int month = 1; month <= 12; month++) {
+        //    totalBank = totalBank + depositBank;
+        //    totalBank = totalBank + totalBank / 100жз
+        //    System.out.printf("Месяц %s, сумма накоплений равна %.2f рублей%n", month, totalBank);}
+
+        int salaryI = 29000;
+        int totalBank = 0;
+        for (int i = 1; i <= 12; i++) {
+            totalBank = totalBank + salaryI;
+            totalBank = totalBank + totalBank / 100;
+            System.out.printf("Месяц %s, сумма накоплений равна %s рублей%n", i, totalBank);
         }
+
         System.out.println();
 
         System.out.println("Task 10");
