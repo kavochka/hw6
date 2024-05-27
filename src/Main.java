@@ -56,9 +56,9 @@ public class Main {
         System.out.println("Task 9");
         // double totalBank = 0;
         //int depositBank = 29000;
+        // double percentPerMonth = 1.01;
         //for (int month = 1; month <= 12; month++) {
-        //    totalBank = totalBank + depositBank;
-        //    totalBank = totalBank + totalBank / 100жз
+        //    totalBank = (totalBank + depositBank) * percentPerMonth;
         //    System.out.printf("Месяц %s, сумма накоплений равна %.2f рублей%n", month, totalBank);}
 
         int salaryI = 29000;
