@@ -62,9 +62,9 @@ public class Main {
         System.out.println();
 
         System.out.println("Task 10");
-for (int i = 1; i <= 10; i++){
-    System.out.printf("2 * %s = %s%n", i, i * 2);
-}
+        for (int i = 1; i <= 10; i++) {
+            System.out.printf("2 * %s = %s%n", i, i * 2);
+        }
 
     }
 }
